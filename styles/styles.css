@@ -1,8 +1,9 @@
-body {
-  background-color: #d6ffd2;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  display: grid;
-  grid-template-areas: "header" "header" "header" "main"   "main" "main"  "footer" "footer" "footer"; }
+header {
+  grid-area: header; }
+
+.image {
+  display: flex;
+  justify-content: center; }
 
 nav {
   background-color: #b3e371;
@@ -14,6 +15,24 @@ nav {
   justify-content: space-between;
   font-weight: bold;
   flex-wrap: wrap; }
+  @media screen and (max-width: 320px) {
+    nav nav {
+      height: 200px; } }
+  @media screen and (max-width: 768px) {
+    nav nav {
+      height: 200px; } }
+
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #b3e371;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-area: footer; }
 
 li {
   list-style: none;
@@ -32,24 +51,20 @@ li {
 a {
   text-decoration: none; }
 
-footer {
-  height: 50px;
-  width: 100%;
-  background-color: #b3e371;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  grid-area: footer; }
-
 .paragraph {
   width: 300px;
   padding: 10px; }
 
 .maps {
   margin: 20px; }
+  @media screen and (max-width: 768px) {
+    .maps .maps {
+      height: 300px;
+      width: 100%; } }
+  @media screen and (max-width: 320px) {
+    .maps .maps {
+      height: 300px;
+      width: 100%; } }
 
 .center {
   display: flex;
@@ -58,14 +73,16 @@ footer {
 .logo {
   height: 100px; }
 
-.image {
-  display: flex;
-  justify-content: center; }
-
 .cakes {
   height: 200px;
   margin-top: 20px;
   margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    .cakes .cakes {
+      height: 140px; } }
+  @media screen and (max-width: 320px) {
+    .cakes .cakes {
+      height: 140px; } }
 
 .cakes:hover {
   -webkit-transform: scale(0.8);
@@ -86,12 +103,17 @@ footer {
 
 .video {
   margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    .video .video {
+      height: 200px;
+      width: 100%; } }
+  @media screen and (max-width: 320px) {
+    .video .video {
+      height: 200px;
+      width: 100%; } }
 
 main {
   grid-area: main; }
-
-header {
-  grid-area: header; }
 
 .form {
   margin: 20px; }
@@ -99,32 +121,18 @@ header {
 h2 {
   text-align: center; }
 
+body {
+  background-color: #d6ffd2;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  grid-template-areas: "header" "header" "header" "main"   "main" "main"  "footer" "footer" "footer"; }
+
 @media only screen and (max-width: 320px) {
   body {
     display: grid;
-    grid-template-areas: "header" "main" "footer "; }
-  .cakes {
-    height: 140px; }
-  .maps {
-    height: 300px;
-    width: 100%; }
-  .video {
-    height: 200px;
-    width: 100%; }
-  nav {
-    height: 200px; } }
+    grid-template-areas: "header" "main" "footer "; } }
 
 @media only screen and (max-width: 768px) {
   body {
     display: grid;
-    grid-template-areas: "header" "main" "footer "; }
-  .cakes {
-    height: 140px; }
-  .maps {
-    height: 300px;
-    width: 100%; }
-  .video {
-    height: 200px;
-    width: 100%; }
-  nav {
-    height: 200px; } }
+    grid-template-areas: "header" "main" "footer "; } }

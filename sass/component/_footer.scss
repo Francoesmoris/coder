@@ -1,0 +1,15 @@
+@import '../base/variables';
+
+footer{
+    
+    height: 50px;
+    width: 100%;
+    background-color: $bg-color-general;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: footer;
+}
