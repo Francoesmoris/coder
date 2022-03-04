@@ -1,6 +1,6 @@
 
 
-
+@import "../base/mapa";
 
 li{
     list-style: none;
@@ -10,12 +10,7 @@ li{
 }
 
 .photos{
-    
-    width: 300px;
-    height: 200px;
-    transition-property: all;
-    transition-duration: 2s;
-    
+   @include fotos (300px,200px,all,2s)
 }
 .photos:hover {
     transform: scale(1.2);
@@ -63,8 +58,8 @@ a{
 
 .cakes{
     height: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: map-get($cakes , margin );
+    margin-bottom: map-get($cakes , margin );
     @media screen and (max-width: 768px) {
        
         .cakes {

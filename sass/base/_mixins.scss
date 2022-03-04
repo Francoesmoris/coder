@@ -1,0 +1,7 @@
+@mixin fotos ($ancho, $largo, $transicion1, $transicion2, ) {
+    width: $ancho;
+    height: $largo;
+    transition-property:$transicion1;
+    transition-duration: $transicion2;
+
+}

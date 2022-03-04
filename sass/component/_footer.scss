@@ -7,8 +7,7 @@ footer{
     background-color: $bg-color-general;
     text-align: center;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
+    @extend %align;
     align-items: center;
     flex-wrap: wrap;
     grid-area: footer;

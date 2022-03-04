@@ -5,8 +5,7 @@ header{
     grid-area:header;
 }
  .image{
-    display: flex;
-    justify-content: center;
+    @extend %align;
  }
     
     nav {
