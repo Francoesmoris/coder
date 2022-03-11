@@ -9,9 +9,7 @@ li{
     
 }
 
-.photos{
-   @include fotos (300px,200px,all,2s)
-}
+
 .photos:hover {
     transform: scale(1.2);
 }
@@ -85,6 +83,14 @@ transform: scale(0.8);
     align-items: center;
     justify-content: center;
     
+    
+}
+.circle {
+    border-radius: 50%;
+    width: 500px;
+}
+.tacc{
+    text-align: center;
 }
 
 .home{
