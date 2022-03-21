@@ -88,6 +88,16 @@ transform: scale(0.8);
 .circle {
     border-radius: 50%;
     width: 500px;
+    @media screen and (max-width: 768px) {
+       
+        .cakes {
+          width: 260px; }
+        }
+        @media screen and (max-width: 320px) {
+       
+            .cakes {
+              width: 260px; }
+            }
 }
 .tacc{
     text-align: center;
@@ -101,19 +111,7 @@ transform: scale(0.8);
 
 }
 
-.video{
-    margin-bottom: 20px;
-    @media screen and (max-width: 768px) {
-        .video {
-          height: 200px;
-          width: 100%; }
-        }
-        @media screen and (max-width: 320px) {
-            .video {
-              height: 200px;
-              width: 100%; }
-            }
-}
+
 
 main{
     grid-area:main;
